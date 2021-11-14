@@ -1,0 +1,65 @@
+/*  reset CSS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+span{
+    font-size: 14px;
+}
+.img-left{
+    max-height: 600px;
+    width: 100%;
+}
+.open-signup{
+    color: blue;
+}
+.open-signup:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+#forget-pw:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.modalSignUp{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-contaner{
+    position: absolute;
+    min-height: 500px;
+    min-width: 400px;
+    animation: modalFadeIn ease 0.3s;
+}
+.modalSignUp.open{
+    display: flex;
+}
+.modal-close{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#help{
+    color: blue;
+}
+#help:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
